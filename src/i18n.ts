@@ -7,7 +7,7 @@ export const resources = {
   en: {
     translation: en,
   },
-};
+} as const;
 
 i18n.use(initReactI18next).init({
   resources,

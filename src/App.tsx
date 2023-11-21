@@ -7,8 +7,10 @@ const App = () => {
   return (
     <div className="App">
       <p>{t("example")}</p>
-      <p>{t("translation.example")}</p>
+      <p>{t("example", { ns: 'translation' })}</p>
       <p>{t("translation:example")}</p>
+      {/* this is not a valid t usage: */}
+      {/* <p>{t("translation.example")}</p> */}
     </div>
   );
 };
